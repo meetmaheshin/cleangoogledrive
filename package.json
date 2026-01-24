@@ -1,0 +1,15 @@
+{
+  "name": "clean-google-photos",
+  "version": "1.0.0",
+  "description": "Web app to clean non-human photos from Google Photos",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "googleapis": "^131.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
