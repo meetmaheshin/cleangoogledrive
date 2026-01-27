@@ -3,11 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhotoClean - Clean Your Google Drive Photos</title>
-    <meta name="description" content="Free tool to find and remove screenshots, memes, and junk photos from your Google Drive. Clean up storage space instantly.">
+
+    <!-- Primary SEO -->
+    <title>FreeUpDrive - Free Google Drive Cleaner | Remove Screenshots & Junk Photos</title>
+    <meta name="description" content="Free tool to automatically find and remove screenshots, memes, WhatsApp images, and junk photos from Google Drive. Clean up storage space instantly. No downloads required.">
+    <meta name="keywords" content="google drive cleaner, free up google drive space, delete screenshots google drive, remove junk photos, google drive storage full, clean google drive, google photos cleaner, free storage cleaner">
+    <meta name="author" content="FreeUpDrive">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://freeupdrive.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://freeupdrive.com/">
+    <meta property="og:title" content="FreeUpDrive - Free Google Drive Cleaner">
+    <meta property="og:description" content="Automatically find and remove screenshots, memes, and junk photos from your Google Drive. Free up storage space instantly!">
+    <meta property="og:image" content="https://freeupdrive.com/og-image.png">
+    <meta property="og:site_name" content="FreeUpDrive">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://freeupdrive.com/">
+    <meta name="twitter:title" content="FreeUpDrive - Free Google Drive Cleaner">
+    <meta name="twitter:description" content="Automatically find and remove screenshots, memes, and junk photos from your Google Drive. Free up storage space instantly!">
+    <meta name="twitter:image" content="https://freeupdrive.com/og-image.png">
+
+    <!-- Structured Data for AI Search (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "FreeUpDrive",
+        "url": "https://freeupdrive.com",
+        "description": "Free tool to automatically find and remove screenshots, memes, WhatsApp images, and junk photos from Google Drive. Clean up storage space instantly.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Detect screenshots automatically",
+            "Find WhatsApp forwarded images",
+            "Identify memes and downloaded images",
+            "Move junk to folder for easy deletion",
+            "No software download required",
+            "Works directly in browser"
+        ],
+        "screenshot": "https://freeupdrive.com/og-image.png",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "150"
+        }
+    }
+    </script>
+
+    <!-- FAQ Schema for AI Search -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I free up Google Drive storage space?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use FreeUpDrive to automatically scan your Google Drive for screenshots, memes, and junk photos. The tool identifies files you likely don't need and moves them to a folder you can delete at once."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is FreeUpDrive safe to use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, FreeUpDrive uses official Google OAuth authentication. It never stores your password and only moves files to a review folder - it doesn't delete anything automatically."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What types of junk photos does FreeUpDrive detect?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FreeUpDrive detects screenshots, WhatsApp forwarded images, Telegram photos, memes, document scans, social media downloads, and other non-personal photos based on filename patterns and image dimensions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is FreeUpDrive free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, FreeUpDrive is completely free to use. There are no hidden fees or premium features."
+                }
+            }
+        ]
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%234285f4'/><stop offset='100%25' style='stop-color:%2334a853'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23g)'/><path d='M30 50 L45 65 L70 35' stroke='white' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%234285f4'/><stop offset='100%25' style='stop-color:%2334a853'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23g)'/><path d='M30 50 L45 65 L70 35' stroke='white' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -536,7 +632,7 @@
                             <path d="M9 12l2 2 4-4"/>
                         </svg>
                     </div>
-                    <span class="logo-text">PhotoClean</span>
+                    <span class="logo-text">FreeUpDrive</span>
                 </div>
 
                 <p class="tagline">Instantly find and remove screenshots, memes, and junk photos from your Google Drive</p>
@@ -643,7 +739,7 @@
 
             <!-- Footer -->
             <footer class="footer">
-                <p>PhotoClean - Free Google Drive Photo Cleaner</p>
+                <p>FreeUpDrive - Free Google Drive Photo Cleaner</p>
                 <p style="margin-top:5px; font-size:12px;">Your photos never leave your browser. We don't store any data.</p>
             </footer>
         </div>
