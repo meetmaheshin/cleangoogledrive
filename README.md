@@ -1,13 +1,15 @@
-# Clean Google Photos
+# FreeUpDrive - Google Drive Cleaner
 
-A simple web app to identify and clean up screenshots and non-human photos from your Google Photos library.
+A simple web app to identify and clean up screenshots and non-human photos from your Google Drive.
+
+**Live at: https://freeupdrive.com**
 
 ## Features
 
-- Connect to Google Photos via OAuth
-- Scan library for screenshots, memes, downloaded images, etc.
-- Select and mark photos for deletion
-- Simple, clean UI
+- Connect to Google Drive via OAuth
+- Scan for screenshots, memes, downloaded images, etc.
+- Move unwanted photos to a "To Delete" folder for easy cleanup
+- Modern, clean UI with ad support
 
 ## Setup
 
@@ -63,16 +65,10 @@ The app detects non-human photos using filename patterns and image dimensions:
 
 ## Important Limitation
 
-**Google Photos API does not allow deleting photos that weren't uploaded by the app.**
-
-This means the app can identify photos for deletion, but you'll need to delete them manually in Google Photos. The app shows you which photos to delete.
-
-Workarounds:
-- Use the app to identify photos, then delete manually
-- Export the list of photo IDs for reference
+The app moves identified photos to a folder called "🗑️ To Delete - Screenshots" in your Google Drive. You can then review and delete the entire folder at once.
 
 ## Tech Stack
 
 - Node.js + Express
-- Google Photos Library API
+- Google Drive API v3
 - Vanilla HTML/CSS/JS (no build step!)
